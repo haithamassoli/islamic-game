@@ -1,0 +1,3 @@
+[mcp_servers.blender]
+command = "uv"
+args = ["--directory", "/Users/goldentik/blender_mcp/mcp", "run", "blender-mcp"]

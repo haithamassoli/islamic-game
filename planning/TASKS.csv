@@ -1,0 +1,200 @@
+id,title,milestone,epic,priority,status,type,complexity,level,religious_review,dependencies,path
+TASK-M00-001,إنشاء نظام التخطيط والتتبع ومدقق الاتساق tools/plan.py,M00,EP-01,Critical,Done,DevOps,M,Foundation,No,,tasks/M00/TASK-M00-001.md
+TASK-M00-002,إكمال إعداد مستودع git (.gitignore لـ Unity وGit LFS وأول commit),M00,EP-02,Critical,Ready,DevOps,S,Foundation,No,TASK-M00-001,tasks/M00/TASK-M00-002.md
+TASK-M00-003,سجل تراخيص الطرف الثالث (الحزم والخطوط والمصحف والأصول),M00,EP-02,High,Ready,DevOps,S,Foundation,No,,tasks/M00/TASK-M00-003.md
+TASK-M00-004,اعتماد المراجع الشرعي وتحديد آلية المراجعة على دفعات,M00,EP-06,Critical,Ready,Religious Review,M,Foundation,Yes,,tasks/M00/TASK-M00-004.md
+TASK-M00-005,اسم البلدة الخيالية ووثيقة إعدادها (F1),M00,EP-08,High,Todo,Writing,S,Foundation,Yes,TASK-M00-004,tasks/M00/TASK-M00-005.md
+TASK-M00-006,ملف سجل المصادر الدينية من PRD 9.1,M00,EP-06,High,Ready,Writing,S,Foundation,Yes,,tasks/M00/TASK-M00-006.md
+TASK-M00-007,ملف سجل المسائل الشرعية المعلقة SR-01 إلى SR-13,M00,EP-06,High,Ready,Writing,S,Foundation,Yes,,tasks/M00/TASK-M00-007.md
+TASK-M00-008,مصفوفة الأجهزة والمتصفحات المستهدفة للاختبار,M00,EP-23,Medium,Ready,QA,S,Foundation,No,,tasks/M00/TASK-M00-008.md
+TASK-M01-001,إنشاء مشروع Unity 6 بقالب URP وإعداداته الأساسية,M01,EP-03,Critical,Todo,Programming,S,Foundation,No,TASK-M00-002,tasks/M01/TASK-M01-001.md
+TASK-M01-002,هيكل المجلدات وملفات Assembly Definition,M01,EP-03,Critical,Todo,Programming,S,Foundation,No,TASK-M01-001,tasks/M01/TASK-M01-002.md
+TASK-M01-003,تثبيت الحزم الأساسية (Input System وCinemachine وAI Navigation وLocalization وYarn Spinner وNewtonsoft وTest Framework),M01,EP-03,Critical,Todo,Programming,S,Foundation,No,TASK-M01-001;TASK-M00-003,tasks/M01/TASK-M01-003.md
+TASK-M01-004,تشغيل اختبارات EditMode آلياً في CI,M01,EP-02,Critical,Todo,DevOps,M,Foundation,No,TASK-M01-002,tasks/M01/TASK-M01-004.md
+TASK-M01-005,سكربت بناء macOS من سطر الأوامر,M01,EP-02,High,Todo,DevOps,S,Foundation,No,TASK-M01-001,tasks/M01/TASK-M01-005.md
+TASK-M01-006,ساعة اللعبة GameClock (يوم ووقت وفواصل ثابتة),M01,EP-03,Critical,Todo,Programming,S,Foundation,No,TASK-M01-002,tasks/M01/TASK-M01-006.md
+TASK-M01-007,مولد عشوائي ببذرة وحالة قابلة للحفظ SeededRng,M01,EP-03,Critical,Todo,Programming,S,Foundation,No,TASK-M01-002,tasks/M01/TASK-M01-007.md
+TASK-M01-008,نموذج GameEvent وأنواع الأحداث,M01,EP-03,Critical,Todo,Programming,S,Foundation,No,TASK-M01-002,tasks/M01/TASK-M01-008.md
+TASK-M01-009,سجل القرارات DecisionLog وخط المعالجة FR-E4,M01,EP-03,Critical,Todo,Programming,L,Foundation,No,TASK-M01-006;TASK-M01-008,tasks/M01/TASK-M01-009.md
+TASK-M01-010,منع التكرار عبر lastProcessedSeq لكل معالج (FR-E7),M01,EP-03,Critical,Todo,Programming,S,Foundation,No,TASK-M01-009,tasks/M01/TASK-M01-010.md
+TASK-M01-011,طابور الأحداث المؤجلة ScheduledEventQueue (FR-E5),M01,EP-03,Critical,Todo,Programming,M,Foundation,No,TASK-M01-009,tasks/M01/TASK-M01-011.md
+TASK-M01-012,تسلسل JSON قانوني بترتيب مفاتيح ثابت,M01,EP-04,Critical,Todo,Programming,S,Foundation,No,TASK-M01-003,tasks/M01/TASK-M01-012.md
+TASK-M01-013,لقطة الحفظ وSaveManager وISaveStorage المحلي,M01,EP-04,Critical,Todo,Programming,L,Foundation,No,TASK-M01-007;TASK-M01-010;TASK-M01-011;TASK-M01-012,tasks/M01/TASK-M01-013.md
+TASK-M01-014,ترقيم إصدار المخطط والترحيل (T7),M01,EP-04,High,Todo,Programming,M,Foundation,No,TASK-M01-013,tasks/M01/TASK-M01-014.md
+TASK-M01-015,اختبارات الحفظ T1 وT7 وT8 في CI,M01,EP-04,Critical,Todo,QA,M,Foundation,No,TASK-M01-014;TASK-M01-004,tasks/M01/TASK-M01-015.md
+TASK-M01-016,مشهد اختبار النقل (شخصية متحركة بسيطة),M01,EP-23,High,Todo,Programming,S,Foundation,No,TASK-M01-003,tasks/M01/TASK-M01-016.md
+TASK-M01-017,بناء WebGL تجريبي وقياس الأداء والحجم,M01,EP-23,High,Todo,DevOps,M,Foundation,No,TASK-M01-016;TASK-M01-005;TASK-M00-008,tasks/M01/TASK-M01-017.md
+TASK-M01-018,بناء جوال تجريبي على جهاز واحد وقياسه,M01,EP-23,High,Todo,DevOps,M,Foundation,No,TASK-M01-016;TASK-M01-005;TASK-M00-008,tasks/M01/TASK-M01-018.md
+TASK-M01-019,التحقق من تراخيص الخطوط العربية والعثمانية,M01,EP-05,High,Todo,DevOps,S,Foundation,No,TASK-M00-003,tasks/M01/TASK-M01-019.md
+TASK-M01-020,اختبار العربية A: UI Toolkit مع Advanced Text Generator,M01,EP-05,Critical,Todo,Programming,M,Foundation,Yes,TASK-M01-017;TASK-M01-018;TASK-M01-019,tasks/M01/TASK-M01-020.md
+TASK-M01-021,اختبار العربية B: TextMeshPro مع RTLTMPro,M01,EP-05,Critical,Todo,Programming,M,Foundation,Yes,TASK-M01-017;TASK-M01-018;TASK-M01-019,tasks/M01/TASK-M01-021.md
+TASK-M01-022,قرار عرض العربية المكتوب (الواجهة والنص في العالم والآيات),M01,EP-05,Critical,Todo,Design,S,Foundation,Yes,TASK-M01-020;TASK-M01-021;TASK-M00-004,tasks/M01/TASK-M01-022.md
+TASK-M01-023,تقرير قابلية النقل للويب والجوال,M01,EP-23,Critical,Todo,QA,S,Foundation,No,TASK-M01-017;TASK-M01-018,tasks/M01/TASK-M01-023.md
+TASK-M01-024,إعداد Unity Localization ولغة العربية واصطلاح المفاتيح,M01,EP-05,High,Todo,Programming,S,Foundation,No,TASK-M01-003,tasks/M01/TASK-M01-024.md
+TASK-M01-025,مخططات المحتوى JSON (Line وStorySegment والمصادر الدينية),M01,EP-06,Critical,Todo,Programming,M,Foundation,Yes,TASK-M01-002;TASK-M00-006;TASK-M01-012,tasks/M01/TASK-M01-025.md
+TASK-M01-026,بوابة البناء لفحص المحتوى الديني (FR-Q1 وFR-Q2 وFR-Q3),M01,EP-06,Critical,Todo,Programming,M,Foundation,Yes,TASK-M01-025;TASK-M01-004,tasks/M01/TASK-M01-026.md
+TASK-M01-027,استيراد مصحف Tanzil واستخراج الآيات بالإحالة (FR-N2),M01,EP-06,High,Todo,Programming,M,Foundation,Yes,TASK-M01-025;TASK-M00-003,tasks/M01/TASK-M01-027.md
+TASK-M01-028,هيكل Yarn Spinner مع مفاتيح الترجمة,M01,EP-10,High,Todo,Programming,M,Foundation,No,TASK-M01-003;TASK-M01-024,tasks/M01/TASK-M01-028.md
+TASK-M01-029,محدد السطور بالقواعد (الشروط والأولوية والمهلة وonce),M01,EP-10,Critical,Todo,Programming,M,Foundation,No,TASK-M01-025;TASK-M01-007,tasks/M01/TASK-M01-029.md
+TASK-M01-030,واجهة IDialogueProvider ومزود القواعد,M01,EP-10,High,Todo,Programming,S,Foundation,No,TASK-M01-029,tasks/M01/TASK-M01-030.md
+TASK-M02-001,ملف Input Actions (حركة ونظر وتفاعل وقائمة) قابل لإعادة التعيين,M02,EP-07,Critical,Todo,Programming,S,Prototype,No,TASK-M01-003,tasks/M02/TASK-M02-001.md
+TASK-M02-002,متحكم الشخصية بالشخص الثالث,M02,EP-07,Critical,Todo,Programming,M,Prototype,No,TASK-M02-001,tasks/M02/TASK-M02-002.md
+TASK-M02-003,كاميرا Cinemachine بالشخص الثالث مع تفادي التصادم,M02,EP-07,High,Todo,Programming,S,Prototype,No,TASK-M02-002,tasks/M02/TASK-M02-003.md
+TASK-M02-004,شخصية لاعب مؤقتة مع حركات أساسية,M02,EP-21,Medium,Todo,Art,S,Prototype,No,TASK-M02-002;TASK-M00-003,tasks/M02/TASK-M02-004.md
+TASK-M02-005,مخطط السوق الرمادي (دكان اللاعب والمنافس والميزان العام والبئر),M02,EP-08,Critical,Todo,Design,M,Prototype,No,TASK-M01-001,tasks/M02/TASK-M02-005.md
+TASK-M02-006,بيت اللاعب وحي سكني رمادي,M02,EP-08,Medium,Todo,Design,S,Prototype,No,TASK-M02-005,tasks/M02/TASK-M02-006.md
+TASK-M02-007,خبز NavMesh للمنطقة الرمادية,M02,EP-08,High,Todo,Programming,S,Prototype,No,TASK-M02-005;TASK-M01-003;TASK-M02-006,tasks/M02/TASK-M02-007.md
+TASK-M02-008,نظام التفاعل (اكتشاف وتلميح وتنفيذ),M02,EP-07,Critical,Todo,Programming,M,Prototype,No,TASK-M02-002,tasks/M02/TASK-M02-008.md
+TASK-M02-009,تلميح التفاعل بالعربية داخل العالم,M02,EP-19,Medium,Todo,Programming,S,Prototype,No,TASK-M02-008;TASK-M01-022;TASK-M01-024,tasks/M02/TASK-M02-009.md
+TASK-M02-010,إضاءة الليل والنهار مرتبطة بساعة اللعبة,M02,EP-08,Low,Todo,Programming,S,Prototype,No,TASK-M02-005;TASK-M01-006,tasks/M02/TASK-M02-010.md
+TASK-M02-011,سجل الأماكن locationId,M02,EP-08,High,Todo,Programming,S,Prototype,No,TASK-M02-005;TASK-M01-008,tasks/M02/TASK-M02-011.md
+TASK-M02-012,جذر التركيب GameRoot لربط أنظمة المحاكاة بالمشهد,M02,EP-03,Critical,Todo,Programming,M,Prototype,No,TASK-M01-013;TASK-M02-005,tasks/M02/TASK-M02-012.md
+TASK-M03-001,تعريف بيانات الشخصيات (المعرّف والدور والسمات),M03,EP-09,Critical,Todo,Programming,S,Prototype,No,TASK-M01-025,tasks/M03/TASK-M03-001.md
+TASK-M03-002,وكيل NPC بالحركة على NavMesh ونموذج مؤقت,M03,EP-09,Critical,Todo,Programming,M,Prototype,No,TASK-M02-007;TASK-M03-001,tasks/M03/TASK-M03-002.md
+TASK-M03-003,جداول يومية للشخصيات مرتبطة بالساعة,M03,EP-09,High,Todo,Programming,M,Prototype,No,TASK-M03-002;TASK-M01-006;TASK-M02-011;TASK-M01-013,tasks/M03/TASK-M03-003.md
+TASK-M03-004,كثافة الزحام لكل مكان حسب الوقت,M03,EP-09,Medium,Todo,Programming,S,Prototype,No,TASK-M03-003,tasks/M03/TASK-M03-004.md
+TASK-M03-005,بدء حوار Yarn عند التحدث مع شخصية,M03,EP-10,Critical,Todo,Programming,M,Prototype,No,TASK-M02-008;TASK-M01-028;TASK-M03-002,tasks/M03/TASK-M03-005.md
+TASK-M03-006,واجهة الحوار RTL (المتحدث والخيارات والترجمة النصية),M03,EP-19,High,Todo,Programming,M,Prototype,No,TASK-M03-005;TASK-M01-022,tasks/M03/TASK-M03-006.md
+TASK-M03-007,جسر Yarn مع المحاكاة (قراءة الحقائق وتسجيل الأحداث),M03,EP-10,Critical,Todo,Programming,M,Prototype,No,TASK-M03-005;TASK-M01-009;TASK-M03-008,tasks/M03/TASK-M03-007.md
+TASK-M03-008,مزود الحقائق facts لمحدد السطور (FR-D3),M03,EP-10,High,Todo,Programming,M,Prototype,No,TASK-M01-029;TASK-M01-006;TASK-M03-001,tasks/M03/TASK-M03-008.md
+TASK-M03-009,الجمل العابرة barks بالقرب من الشخصيات,M03,EP-10,Medium,Todo,Programming,M,Prototype,No,TASK-M03-008;TASK-M03-002;TASK-M01-030,tasks/M03/TASK-M03-009.md
+TASK-M03-010,حفظ السطور المقولة ومهلاتها في اللقطة,M03,EP-04,High,Todo,Programming,S,Prototype,No,TASK-M01-029;TASK-M01-013,tasks/M03/TASK-M03-010.md
+TASK-M03-011,إعداد 3 شخصيات للنموذج (المنافس وكبير السوق والزبونة),M03,EP-09,High,Todo,Design,S,Prototype,No,TASK-M03-001;TASK-M03-003;TASK-M03-005,tasks/M03/TASK-M03-011.md
+TASK-M04-001,تعريف البضائع السبع (الجودة والسعر),M04,EP-11,Critical,Todo,Design,S,Prototype,No,TASK-M01-025,tasks/M04/TASK-M04-001.md
+TASK-M04-002,المخزون والمال Inventory,M04,EP-11,Critical,Todo,Programming,M,Prototype,No,TASK-M04-001;TASK-M01-013,tasks/M04/TASK-M04-002.md
+TASK-M04-003,اقتصاد الأسر (الرصيد والمخزون والحاجات),M04,EP-11,High,Todo,Programming,M,Prototype,No,TASK-M04-001;TASK-M03-001,tasks/M04/TASK-M04-003.md
+TASK-M04-004,الطلب اليومي وتقلب الأسعار ببذرة ثابتة,M04,EP-11,Medium,Todo,Programming,S,Prototype,No,TASK-M04-001;TASK-M01-007;TASK-M01-006,tasks/M04/TASK-M04-004.md
+TASK-M04-005,الشراء من المورد,M04,EP-11,High,Todo,Programming,M,Prototype,No,TASK-M04-002;TASK-M02-008,tasks/M04/TASK-M04-005.md
+TASK-M04-006,تفاعل الميزان (وضع الصنجات والبضاعة وقراءة الكفتين),M04,EP-11,Critical,Todo,Programming,L,Prototype,No,TASK-M02-008;TASK-M04-001,tasks/M04/TASK-M04-006.md
+TASK-M04-007,الصنجات السليمة والمغشوشة,M04,EP-11,High,Todo,Programming,S,Prototype,No,TASK-M04-006,tasks/M04/TASK-M04-007.md
+TASK-M04-008,وصول الزبائن حسب الوقت ومدخل السمعة,M04,EP-11,High,Todo,Programming,M,Prototype,No,TASK-M03-003;TASK-M04-002;TASK-M03-004,tasks/M04/TASK-M04-008.md
+TASK-M04-009,صفقة البيع الأمينة عبر خط المعالجة TRADE_HONEST,M04,EP-11,Critical,Todo,Programming,M,Prototype,No,TASK-M04-006;TASK-M04-002;TASK-M04-003;TASK-M01-010,tasks/M04/TASK-M04-009.md
+TASK-M04-010,الغش بالكيل والصنجات CHEAT_SCALE,M04,EP-11,Critical,Todo,Programming,M,Prototype,Yes,TASK-M04-009;TASK-M04-007,tasks/M04/TASK-M04-010.md
+TASK-M04-011,الغش بخلط الرديء بالجيد CHEAT_MIXING,M04,EP-11,High,Todo,Programming,S,Prototype,Yes,TASK-M04-009,tasks/M04/TASK-M04-011.md
+TASK-M04-012,الوصف الكاذب مع اكتشاف مؤجل FALSE_DESCRIPTION,M04,EP-11,High,Todo,Programming,M,Prototype,Yes,TASK-M04-009;TASK-M01-011,tasks/M04/TASK-M04-012.md
+TASK-M04-013,اكتشاف الضحية عند الوزن في البيت (حدث مؤجل),M04,EP-11,High,Todo,Programming,M,Prototype,No,TASK-M04-010;TASK-M01-011;TASK-M04-012,tasks/M04/TASK-M04-013.md
+TASK-M04-014,واجهة التسعير والبيع RTL,M04,EP-19,High,Todo,Programming,M,Prototype,No,TASK-M04-009;TASK-M01-022,tasks/M04/TASK-M04-014.md
+TASK-M04-015,اختبار محاكاة الموازنة FR-T5 بلا واجهة,M04,EP-11,High,Todo,Programming,M,Prototype,No,TASK-M04-010;TASK-M04-008;TASK-M04-004,tasks/M04/TASK-M04-015.md
+TASK-M04-016,مراجعة S10: طرق الغش لا تعلّم أساليب واقعية,M04,EP-06,High,Todo,Religious Review,S,Prototype,Yes,TASK-M04-010;TASK-M04-011;TASK-M04-012;TASK-M00-004,tasks/M04/TASK-M04-016.md
+TASK-M05-001,حساب الشهود (المدى والرؤية والانتباه والزحام وobservant),M05,EP-12,Critical,Todo,Programming,M,Prototype,No,TASK-M01-009;TASK-M03-004,tasks/M05/TASK-M05-001.md
+TASK-M05-002,نموذج Belief وذاكرة مستقلة لكل شخصية,M05,EP-12,Critical,Todo,Programming,M,Prototype,No,TASK-M01-008;TASK-M03-001,tasks/M05/TASK-M05-002.md
+TASK-M05-003,معالج الذاكرة: معتقدات للشهود والضحايا,M05,EP-12,Critical,Todo,Programming,M,Prototype,No,TASK-M05-001;TASK-M05-002;TASK-M01-010,tasks/M05/TASK-M05-003.md
+TASK-M05-004,شبكة العلاقات الاجتماعية بين الشخصيات,M05,EP-12,High,Todo,Design,S,Prototype,No,TASK-M03-001,tasks/M05/TASK-M05-004.md
+TASK-M05-005,دورة الشائعات (FR-E6 وFR-M3),M05,EP-12,Critical,Todo,Programming,L,Prototype,No,TASK-M05-003;TASK-M05-004;TASK-M01-007;TASK-M01-006,tasks/M05/TASK-M05-005.md
+TASK-M05-006,تقييم السامع للخبر (skeptic والثقة),M05,EP-12,High,Todo,Programming,S,Prototype,No,TASK-M05-005;TASK-M05-008,tasks/M05/TASK-M05-006.md
+TASK-M05-007,تلاشي الذكريات وسمة grudge (FR-M5),M05,EP-12,Medium,Todo,Programming,S,Prototype,No,TASK-M05-003,tasks/M05/TASK-M05-007.md
+TASK-M05-008,الثقة والمودة لكل شخصية ومعالج العلاقات,M05,EP-13,Critical,Todo,Programming,M,Prototype,No,TASK-M05-003,tasks/M05/TASK-M05-008.md
+TASK-M05-009,اشتقاق السمعة من المعتقدات (FR-R2),M05,EP-13,Critical,Todo,Programming,M,Prototype,No,TASK-M05-008,tasks/M05/TASK-M05-009.md
+TASK-M05-010,آثار السمعة على الزبائن والأسعار والموردين,M05,EP-13,High,Todo,Programming,M,Prototype,No,TASK-M05-009;TASK-M04-008;TASK-M04-005,tasks/M05/TASK-M05-010.md
+TASK-M05-011,بطء استعادة الثقة وعدم المسامحة (FR-R4),M05,EP-13,Medium,Todo,Programming,S,Prototype,No,TASK-M05-008,tasks/M05/TASK-M05-011.md
+TASK-M05-012,دفاع من أحسن إليهم اللاعب عنه (FR-M6),M05,EP-12,Medium,Todo,Programming,S,Prototype,No,TASK-M05-005;TASK-M05-008;TASK-M05-006,tasks/M05/TASK-M05-012.md
+TASK-M05-013,مصادر المعتقد الخاطئ MISTAKE (ميزان معيب وتلف وخلط الفاعل),M05,EP-12,High,Todo,Programming,L,Prototype,No,TASK-M05-003;TASK-M04-013,tasks/M05/TASK-M05-013.md
+TASK-M05-014,البهتان المتعمد من المنافس SLANDER,M05,EP-12,High,Todo,Programming,M,Prototype,No,TASK-M05-005,tasks/M05/TASK-M05-014.md
+TASK-M05-015,تصحيح المعتقد والتبرئة (FR-M7 وCLEARED),M05,EP-12,High,Todo,Programming,L,Prototype,No,TASK-M05-013;TASK-M05-005;TASK-M04-006;TASK-M03-007;TASK-M05-016,tasks/M05/TASK-M05-015.md
+TASK-M05-016,حدث الاتهام ACCUSED وحوار المواجهة,M05,EP-12,High,Todo,Programming,M,Prototype,No,TASK-M05-003;TASK-M03-007,tasks/M05/TASK-M05-016.md
+TASK-M05-017,حفظ الذاكرة والعلاقات والشائعات واختبارا T2 وT5,M05,EP-04,Critical,Todo,QA,M,Prototype,No,TASK-M05-005;TASK-M05-008;TASK-M04-010;TASK-M01-015,tasks/M05/TASK-M05-017.md
+TASK-M06-001,حلقة يوم النموذج (شراء ثم بيع ثم مساء ثم نوم وحفظ تلقائي),M06,EP-08,Critical,Todo,Programming,M,Prototype,No,TASK-M04-009;TASK-M04-005;TASK-M05-010;TASK-M02-012;TASK-M04-010,tasks/M06/TASK-M06-001.md
+TASK-M06-002,كتابة 30 سطراً مؤقتاً للضمير والإغراء بلا نصوص دينية,M06,EP-15,High,Todo,Writing,S,Prototype,No,TASK-M01-025,tasks/M06/TASK-M06-002.md
+TASK-M06-003,محفزات الصوتين الداخليين في النموذج,M06,EP-15,High,Todo,Programming,M,Prototype,No,TASK-M06-002;TASK-M03-008;TASK-M01-030;TASK-M04-007,tasks/M06/TASK-M06-003.md
+TASK-M06-004,سيناريو اتهام باطل واحد,M06,EP-12,High,Todo,Design,S,Prototype,No,TASK-M05-013;TASK-M05-016;TASK-M05-015,tasks/M06/TASK-M06-004.md
+TASK-M06-005,اختبارات الحفظ T3 وT4 وT6 في CI,M06,EP-04,Critical,Todo,QA,M,Prototype,No,TASK-M05-017;TASK-M03-010;TASK-M04-013,tasks/M06/TASK-M06-005.md
+TASK-M06-006,لوحة تطوير لعرض السجل والمعتقدات والشائعات,M06,EP-22,Medium,Todo,Programming,M,Prototype,No,TASK-M05-005,tasks/M06/TASK-M06-006.md
+TASK-M06-007,بروتوكول اختبار اللعب مع الأطفال واستبيانه وموافقة الأهل,M06,EP-22,High,Ready,QA,S,Prototype,No,,tasks/M06/TASK-M06-007.md
+TASK-M06-008,اختبار النموذج مع 5 أطفال أو أكثر وتقريره,M06,EP-22,Critical,Todo,QA,M,Prototype,No,TASK-M06-001;TASK-M06-003;TASK-M06-004;TASK-M06-007;TASK-M06-005;TASK-M06-006,tasks/M06/TASK-M06-008.md
+TASK-M06-009,مراجعة الاستمرار وتعديل الخطة بعد النموذج,M06,EP-01,Critical,Todo,Design,S,Prototype,No,TASK-M06-008;TASK-M06-005,tasks/M06/TASK-M06-009.md
+TASK-M07-001,معالج السجل الأخلاقي المخفي (FR-L1 إلى FR-L4),M07,EP-14,Critical,Todo,Programming,M,VerticalSlice,No,TASK-M01-010;TASK-M06-009,tasks/M07/TASK-M07-001.md
+TASK-M07-002,سلسلة العواقب السببية مع causeEventIds (FR-K1),M07,EP-14,High,Todo,Programming,M,VerticalSlice,No,TASK-M05-010;TASK-M01-011;TASK-M06-009,tasks/M07/TASK-M07-002.md
+TASK-M07-003,أحداث الحياة بمعدل واحد للجميع (FR-K2 وFR-K3 وSR-09),M07,EP-14,High,Todo,Programming,M,VerticalSlice,Yes,TASK-M01-011;TASK-M01-007;TASK-M04-002;TASK-M06-009,tasks/M07/TASK-M07-003.md
+TASK-M07-004,نظام الصوتين الداخليين ومحفزاته وتطور النبرة (SR-01 معطل),M07,EP-15,Critical,Todo,Programming,L,VerticalSlice,Yes,TASK-M06-003;TASK-M07-001,tasks/M07/TASK-M07-004.md
+TASK-M07-005,متغيرات الضمير المرتبطة بأحداث فعلية (FR-C2),M07,EP-15,High,Todo,Programming,S,VerticalSlice,No,TASK-M07-004,tasks/M07/TASK-M07-005.md
+TASK-M07-006,عرض الصوتين (مؤثر بصري وترجمة ومدخل صوتي),M07,EP-15,High,Todo,Programming,M,VerticalSlice,No,TASK-M07-004;TASK-M03-006,tasks/M07/TASK-M07-006.md
+TASK-M07-007,آلة حالة التوبة (REPENT_REMORSE وREPENT_QUIT وRELAPSE),M07,EP-16,Critical,Todo,Programming,M,VerticalSlice,Yes,TASK-M07-001,tasks/M07/TASK-M07-007.md
+TASK-M07-008,دفتر الحقوق: المستحق لكل ضحية (FR-W3),M07,EP-16,Critical,Todo,Programming,M,VerticalSlice,No,TASK-M07-007;TASK-M04-010,tasks/M07/TASK-M07-008.md
+TASK-M07-009,رد الحق المباشر بما فيه الضحية التي لم تعلم (FR-W4),M07,EP-16,Critical,Todo,Programming,M,VerticalSlice,Yes,TASK-M07-008;TASK-M03-007,tasks/M07/TASK-M07-009.md
+TASK-M07-010,التصدق عن الضحية المتعذر الوصول إليها ومغادرة تاجر القافلة,M07,EP-16,High,Todo,Programming,M,VerticalSlice,Yes,TASK-M07-008;TASK-M03-003,tasks/M07/TASK-M07-010.md
+TASK-M07-011,خيارات الندم والإقلاع في التأمل ولقاء الضحية (FR-W1 وFR-W2),M07,EP-16,High,Todo,Programming,M,VerticalSlice,Yes,TASK-M07-007;TASK-M07-004,tasks/M07/TASK-M07-011.md
+TASK-M07-012,الصفقات الأمينة بعد الإقلاع ترفع الثقة تدريجياً (FR-W5),M07,EP-16,Medium,Todo,Programming,S,VerticalSlice,No,TASK-M07-007;TASK-M05-008,tasks/M07/TASK-M07-012.md
+TASK-M07-013,اشتقاق حالة محور الحقيقة (الحالات الأربع),M07,EP-16,Critical,Todo,Programming,S,VerticalSlice,No,TASK-M07-007;TASK-M07-008,tasks/M07/TASK-M07-013.md
+TASK-M07-014,مدقق الاتساق في نسخ التطوير (FR-S7),M07,EP-04,High,Todo,Programming,M,VerticalSlice,No,TASK-M07-001;TASK-M07-013;TASK-M01-013,tasks/M07/TASK-M07-014.md
+TASK-M07-015,اختبار الحفظ T9 (رد حق جزئي),M07,EP-04,Critical,Todo,QA,S,VerticalSlice,No,TASK-M07-009;TASK-M01-015;TASK-M07-010,tasks/M07/TASK-M07-015.md
+TASK-M07-016,أحداث المساعدة والصدقة السرية وأثرها على الحاجات,M07,EP-14,Medium,Todo,Programming,S,VerticalSlice,No,TASK-M07-001;TASK-M04-003,tasks/M07/TASK-M07-016.md
+TASK-M07-017,كتابة مجموعة سطور الضمير والإغراء v1,M07,EP-15,High,Todo,Writing,L,VerticalSlice,Yes,TASK-M07-004;TASK-M00-006,tasks/M07/TASK-M07-017.md
+TASK-M07-018,مسودات نصوص رد الحقوق والتصدق عن الضحية (SR-02 وSR-03),M07,EP-16,High,Todo,Writing,M,VerticalSlice,Yes,TASK-M07-009;TASK-M07-010,tasks/M07/TASK-M07-018.md
+TASK-M07-019,دفعة مراجعة شرعية: الصوتان الداخليان ونمذجة التوبة,M07,EP-06,Critical,Todo,Religious Review,M,VerticalSlice,Yes,TASK-M07-017;TASK-M07-018;TASK-M07-011;TASK-M00-004;TASK-M07-003,tasks/M07/TASK-M07-019.md
+TASK-M08-001,أسلوب العرض المميز لطبقة القصة,M08,EP-17,High,Todo,Design,M,VerticalSlice,Yes,TASK-M02-005,tasks/M08/TASK-M08-001.md
+TASK-M08-002,نقاط السرد في العالم ومشغل مقاطع القصة بالترتيب الثابت (FR-N1),M08,EP-17,Critical,Todo,Programming,M,VerticalSlice,No,TASK-M01-025;TASK-M02-008,tasks/M08/TASK-M08-002.md
+TASK-M08-003,بيانات مقطع الفصل الأول بالإحالات القرآنية,M08,EP-17,Critical,Todo,Writing,S,VerticalSlice,Yes,TASK-M01-027;TASK-M00-006,tasks/M08/TASK-M08-003.md
+TASK-M08-004,نص سرد الفصل الأول من القرآن والتفاسير المعتبرة مع وسم غير الثابت,M08,EP-17,Critical,Todo,Writing,L,VerticalSlice,Yes,TASK-M08-003,tasks/M08/TASK-M08-004.md
+TASK-M08-005,تحقق مصادر الفصل الأول sourceCheck,M08,EP-06,Critical,Todo,Religious Review,M,VerticalSlice,Yes,TASK-M08-004,tasks/M08/TASK-M08-005.md
+TASK-M08-006,المراجعة الشرعية واعتماد مقطع الفصل الأول,M08,EP-06,Critical,Todo,Religious Review,M,VerticalSlice,Yes,TASK-M08-005;TASK-M00-004,tasks/M08/TASK-M08-006.md
+TASK-M08-007,مكوّن عرض الآيات بالرسم العثماني من النص المستخرج فقط,M08,EP-17,Critical,Todo,Programming,M,VerticalSlice,Yes,TASK-M01-022;TASK-M01-027,tasks/M08/TASK-M08-007.md
+TASK-M08-008,تصدير المحتوى للمراجع واستيراد ملاحظاته (FR-Q4),M08,EP-06,High,Todo,Programming,M,VerticalSlice,No,TASK-M01-026,tasks/M08/TASK-M08-008.md
+TASK-M08-009,وسم الروايات غير الثابتة في العرض (S4),M08,EP-17,High,Todo,Programming,S,VerticalSlice,Yes,TASK-M08-007;TASK-M08-002,tasks/M08/TASK-M08-009.md
+TASK-M08-010,بطاقة الانتقال ومؤشر الطبقة (F5),M08,EP-17,High,Todo,Programming,S,VerticalSlice,Yes,TASK-M08-002,tasks/M08/TASK-M08-010.md
+TASK-M08-011,تسجيل عينة الراوي العربي لمقطع الفصل الأول,M08,EP-20,High,Todo,Audio,M,VerticalSlice,Yes,TASK-M08-006,tasks/M08/TASK-M08-011.md
+TASK-M09-001,محدد النهاية من مصفوفة المحورين (8 نهايات) وعتبة السمعة,M09,EP-18,Critical,Todo,Programming,S,VerticalSlice,Yes,TASK-M07-013;TASK-M05-009,tasks/M09/TASK-M09-001.md
+TASK-M09-002,تسلسل النهاية F5 (النهاية الشخصية ثم الانتقال ثم خاتمة القوم ثم المراجعة ثم اللعب الحر),M09,EP-18,Critical,Todo,Programming,M,VerticalSlice,No,TASK-M09-001;TASK-M08-010,tasks/M09/TASK-M09-002.md
+TASK-M09-003,محتوى نهايتين للشريحة العمودية,M09,EP-18,High,Todo,Writing,M,VerticalSlice,Yes,TASK-M09-002,tasks/M09/TASK-M09-003.md
+TASK-M09-004,نموذج بطاقة المراجعة مع evidenceEventIds,M09,EP-18,Critical,Todo,Programming,M,VerticalSlice,No,TASK-M01-008;TASK-M05-005,tasks/M09/TASK-M09-004.md
+TASK-M09-005,قوالب بطاقات المراجعة (الغش الخفي والصدقة السرية والاتهام الباطل وسلاسل الشائعات والعواقب),M09,EP-18,High,Todo,Programming,M,VerticalSlice,No,TASK-M09-004;TASK-M07-002;TASK-M07-008;TASK-M07-016,tasks/M09/TASK-M09-005.md
+TASK-M09-006,اختبار FR-J8 الآلي للأدلة والأرقام,M09,EP-18,Critical,Todo,QA,S,VerticalSlice,No,TASK-M09-005,tasks/M09/TASK-M09-006.md
+TASK-M09-007,واجهة مراجعة الرحلة,M09,EP-19,High,Todo,Programming,M,VerticalSlice,No,TASK-M09-005;TASK-M10-001,tasks/M09/TASK-M09-007.md
+TASK-M09-008,مراجعة شرعية لنصوص المراجعة والدروس (FR-J7),M09,EP-06,High,Todo,Religious Review,S,VerticalSlice,Yes,TASK-M09-005;TASK-M09-003,tasks/M09/TASK-M09-008.md
+TASK-M09-009,العودة للعب الحر بعد النهاية,M09,EP-18,Medium,Todo,Programming,S,VerticalSlice,No,TASK-M09-002,tasks/M09/TASK-M09-009.md
+TASK-M10-001,دليل أسلوب الواجهة ونظام التخطيط من اليمين لليسار,M10,EP-19,High,Todo,Design,M,VerticalSlice,No,TASK-M01-022,tasks/M10/TASK-M10-001.md
+TASK-M10-002,القائمة الرئيسية وخانات الحفظ الثلاث,M10,EP-19,High,Todo,Programming,M,VerticalSlice,No,TASK-M10-001;TASK-M01-013,tasks/M10/TASK-M10-002.md
+TASK-M10-003,واجهة HUD مختصرة بلا عدادات أخلاقية (S9),M10,EP-19,Medium,Todo,Programming,S,VerticalSlice,No,TASK-M10-001,tasks/M10/TASK-M10-003.md
+TASK-M10-004,الإعدادات (الصوت والترجمة وإعادة التعيين وعمى الألوان والجودة),M10,EP-19,High,Todo,Programming,M,VerticalSlice,No,TASK-M10-001;TASK-M02-001;TASK-M10-011,tasks/M10/TASK-M10-004.md
+TASK-M10-005,إنشاء الشخصية (ذكر وأنثى ولباس محتشم والأنثى مقيدة بـ SR-08),M10,EP-19,Medium,Todo,Programming,M,VerticalSlice,Yes,TASK-M10-001;TASK-M10-008,tasks/M10/TASK-M10-005.md
+TASK-M10-006,وثيقة الاتجاه الفني ولوحة المراجع (تصور فني),M10,EP-21,High,Todo,Art,M,VerticalSlice,Yes,TASK-M00-005,tasks/M10/TASK-M10-006.md
+TASK-M10-007,أصول منطقة السوق النهائية (دكاكين ومبانٍ وأدوات),M10,EP-21,Critical,Todo,Art,XL,VerticalSlice,No,TASK-M10-006;TASK-M02-005,tasks/M10/TASK-M10-007.md
+TASK-M10-008,نماذج الشخصيات وملابس محتشمة,M10,EP-21,High,Todo,Art,XL,VerticalSlice,Yes,TASK-M10-006,tasks/M10/TASK-M10-008.md
+TASK-M10-009,الإضاءة والمعالجة اللاحقة للسوق (URP),M10,EP-21,High,Todo,Art,M,VerticalSlice,No,TASK-M10-007,tasks/M10/TASK-M10-009.md
+TASK-M10-010,البيئة الصوتية للسوق بلا معازف (S11),M10,EP-20,High,Todo,Audio,M,VerticalSlice,Yes,TASK-M02-005,tasks/M10/TASK-M10-010.md
+TASK-M10-011,مجموعات المكسر والمؤثرات الصوتية (الميزان والنقود والخطوات),M10,EP-20,Medium,Todo,Audio,M,VerticalSlice,No,TASK-M04-006,tasks/M10/TASK-M10-011.md
+TASK-M10-012,عينة تسجيل الصوتين الداخليين,M10,EP-20,High,Todo,Audio,M,VerticalSlice,Yes,TASK-M07-019,tasks/M10/TASK-M10-012.md
+TASK-M10-013,قائمة الإيقاف ومؤشر الحفظ التلقائي,M10,EP-19,Medium,Todo,Programming,S,VerticalSlice,No,TASK-M10-002,tasks/M10/TASK-M10-013.md
+TASK-M10-014,مراجعة إمكانية الوصول (حجم النص والترجمة الدائمة والتباين),M10,EP-22,Medium,Todo,QA,S,VerticalSlice,No,TASK-M10-004;TASK-M07-006,tasks/M10/TASK-M10-014.md
+TASK-M11-001,سيناريو الشريحة العمودية (10 إلى 15 دقيقة),M11,EP-08,Critical,Todo,Design,M,VerticalSlice,Yes,TASK-M07-011;TASK-M05-015,tasks/M11/TASK-M11-001.md
+TASK-M11-002,دمج محتوى الشريحة (يوم كامل ومسار توبة ومقطع قصة ونهايتان ومراجعة),M11,EP-08,Critical,Todo,Programming,L,VerticalSlice,No,TASK-M11-001;TASK-M08-006;TASK-M08-007;TASK-M09-003;TASK-M09-007;TASK-M10-009,tasks/M11/TASK-M11-002.md
+TASK-M11-003,قياس الأداء على Mac M1 (60 إطاراً),M11,EP-23,Critical,Todo,QA,M,VerticalSlice,No,TASK-M11-002,tasks/M11/TASK-M11-003.md
+TASK-M11-004,إعادة قياس الأداء على الويب والجوال (P2),M11,EP-23,High,Todo,QA,M,VerticalSlice,No,TASK-M11-002;TASK-M01-023,tasks/M11/TASK-M11-004.md
+TASK-M11-005,تدقيق المحتوى الديني في بناء الشريحة,M11,EP-06,Critical,Todo,Religious Review,S,VerticalSlice,Yes,TASK-M11-002;TASK-M01-026;TASK-M07-019;TASK-M09-008,tasks/M11/TASK-M11-005.md
+TASK-M11-006,اختبار لعب الشريحة مع أطفال وأولياء أمور وتقريره,M11,EP-22,Critical,Todo,QA,M,VerticalSlice,No,TASK-M11-002;TASK-M06-007;TASK-M11-005,tasks/M11/TASK-M11-006.md
+TASK-M11-007,تقدير كلفة إنتاج MVP,M11,EP-01,High,Todo,Design,M,VerticalSlice,No,TASK-M11-006,tasks/M11/TASK-M11-007.md
+TASK-M11-008,بناء الشريحة الداخلي وقائمة فحصه,M11,EP-24,High,Todo,DevOps,S,VerticalSlice,No,TASK-M11-003;TASK-M11-005,tasks/M11/TASK-M11-008.md
+TASK-M11-009,قرار الاستمرار وتثبيت نطاق MVP,M11,EP-01,Critical,Todo,Design,S,VerticalSlice,No,TASK-M11-004;TASK-M11-006;TASK-M11-007;TASK-M11-008;TASK-M09-006,tasks/M11/TASK-M11-009.md
+TASK-M12-001,مخطط البلدة الكامل (الأحياء وطريق القوافل والبئر والمراعي ونقاط السرد),M12,EP-08,Critical,Todo,Design,L,MVP,No,TASK-M11-009,tasks/M12/TASK-M12-001.md
+TASK-M12-002,أصول البلدة النهائية خارج السوق,M12,EP-21,High,Todo,Art,XL,MVP,No,TASK-M12-001;TASK-M10-007,tasks/M12/TASK-M12-002.md
+TASK-M12-003,إعداد الأدوار الإحدى عشرة بسماتها وجداولها وأسرها,M12,EP-09,Critical,Todo,Design,L,MVP,No,TASK-M12-001;TASK-M03-011,tasks/M12/TASK-M12-003.md
+TASK-M12-004,تاجر القافلة: الصفقة المغرية لمرة واحدة والمغادرة,M12,EP-11,High,Todo,Design,M,MVP,No,TASK-M12-003;TASK-M07-010,tasks/M12/TASK-M12-004.md
+TASK-M12-005,سيناريوهات الرحمة مع الأرملة وأطفالها,M12,EP-14,High,Todo,Writing,M,MVP,No,TASK-M12-003;TASK-M07-016,tasks/M12/TASK-M12-005.md
+TASK-M12-006,علاقة الصبي الحمّال اليتيم المتطورة,M12,EP-13,Medium,Todo,Writing,M,MVP,No,TASK-M12-003,tasks/M12/TASK-M12-006.md
+TASK-M12-007,اللص والعشّاب في أحداث الحياة (السرقة والمرض والنفقات),M12,EP-14,Medium,Todo,Design,M,MVP,Yes,TASK-M12-003;TASK-M07-003,tasks/M12/TASK-M12-007.md
+TASK-M12-008,أسرة اللاعب وحاجاتها كدافع (5.3),M12,EP-11,High,Todo,Design,M,MVP,No,TASK-M12-003;TASK-M04-003,tasks/M12/TASK-M12-008.md
+TASK-M12-009,هيكل الفصول 1 إلى 3 ومعالج حالة القصة والقصة الرئيسية,M12,EP-17,Critical,Todo,Programming,L,MVP,No,TASK-M11-009;TASK-M08-002,tasks/M12/TASK-M12-009.md
+TASK-M12-010,مقطع الفصل الثاني (هود 87–92): كتابة وتحقق واعتماد,M12,EP-17,Critical,Todo,Writing,L,MVP,Yes,TASK-M08-006;TASK-M08-008,tasks/M12/TASK-M12-010.md
+TASK-M12-011,مقطع الفصل الثالث (الأعراف 88–90): كتابة وتحقق واعتماد,M12,EP-17,Critical,Todo,Writing,L,MVP,Yes,TASK-M08-006;TASK-M08-008,tasks/M12/TASK-M12-011.md
+TASK-M12-012,مقطع الخاتمة (الأعراف 91–93 وهود 94–95 والشعراء 189) بالعرض الافتراضي SR-04,M12,EP-17,Critical,Todo,Writing,L,MVP,Yes,TASK-M08-006;TASK-M08-008,tasks/M12/TASK-M12-012.md
+TASK-M12-013,محتوى النهايات الست المتبقية,M12,EP-18,High,Todo,Writing,M,MVP,Yes,TASK-M09-003,tasks/M12/TASK-M12-013.md
+TASK-M12-014,حوارات Yarn الكاملة لكل الشخصيات (لا كلام في الدين SR-10),M12,EP-10,Critical,Todo,Writing,XL,MVP,Yes,TASK-M12-003,tasks/M12/TASK-M12-014.md
+TASK-M12-015,مجموعات barks والصوتين الداخليين الكاملة,M12,EP-15,High,Todo,Writing,XL,MVP,Yes,TASK-M07-019;TASK-M12-003,tasks/M12/TASK-M12-015.md
+TASK-M12-016,التعليم المدمج للميزان والبيع,M12,EP-19,High,Todo,Design,M,MVP,No,TASK-M12-009,tasks/M12/TASK-M12-016.md
+TASK-M12-017,التسجيل العربي الكامل (الراوي والصوتان والسطور الرئيسية),M12,EP-20,High,Todo,Audio,XL,MVP,Yes,TASK-M12-010;TASK-M12-011;TASK-M12-012;TASK-M12-015;TASK-M12-014,tasks/M12/TASK-M12-017.md
+TASK-M12-018,موازنة الاقتصاد والسمعة عبر الحلقة الكاملة,M12,EP-11,High,Todo,Design,L,MVP,No,TASK-M12-009;TASK-M12-003;TASK-M12-004;TASK-M12-008;TASK-M12-019,tasks/M12/TASK-M12-018.md
+TASK-M12-019,سلوك التاجر المنافس المتقدم (الغش والإغراء والبهتان),M12,EP-09,Medium,Todo,Programming,M,MVP,No,TASK-M12-003;TASK-M05-014,tasks/M12/TASK-M12-019.md
+TASK-M13-001,مجموعة اختبارات الحفظ T1 إلى T9 على محتوى MVP واختبار تحمل,M13,EP-04,Critical,Todo,QA,M,MVP,No,TASK-M12-009;TASK-M07-015;TASK-M06-005,tasks/M13/TASK-M13-001.md
+TASK-M13-002,تحسين الأداء (60 إطاراً على M1 والذاكرة),M13,EP-23,Critical,Todo,Programming,L,MVP,No,TASK-M12-002;TASK-M12-003,tasks/M13/TASK-M13-002.md
+TASK-M13-003,اختبار انحدار شامل وجلسة صيد أخطاء,M13,EP-22,Critical,Todo,QA,L,MVP,No,TASK-M12-009;TASK-M12-014;TASK-M12-016;TASK-M12-002;TASK-M12-013;TASK-M12-017;TASK-M12-018,tasks/M13/TASK-M13-003.md
+TASK-M13-004,المراجعة الشرعية النهائية لكل المحتوى,M13,EP-06,Critical,Todo,Religious Review,XL,MVP,Yes,TASK-M12-010;TASK-M12-011;TASK-M12-012;TASK-M12-013;TASK-M12-014;TASK-M12-015;TASK-M12-017;TASK-M12-007,tasks/M13/TASK-M13-004.md
+TASK-M13-005,تدقيق سجل المسائل المعلقة: لا ميزة مفعّلة دون حسم,M13,EP-06,Critical,Todo,Religious Review,S,MVP,Yes,TASK-M13-004,tasks/M13/TASK-M13-005.md
+TASK-M13-006,اختبار لعب MVP وقياس معايير القسم 12,M13,EP-22,Critical,Todo,QA,L,MVP,No,TASK-M13-003;TASK-M13-004,tasks/M13/TASK-M13-006.md
+TASK-M13-007,إصلاحات ما بعد اختبار اللعب,M13,EP-22,High,Todo,Programming,L,MVP,No,TASK-M13-006,tasks/M13/TASK-M13-007.md
+TASK-M13-008,بناء إصدار macOS (التوقيع والتوثيق والتوزيع المجاني),M13,EP-24,Critical,Todo,DevOps,M,MVP,No,TASK-M13-007;TASK-M13-005;TASK-M13-002;TASK-M13-001;TASK-M13-009,tasks/M13/TASK-M13-008.md
+TASK-M13-009,صفحة التعريف وبيان الخصوصية (لا جمع بيانات),M13,EP-24,Medium,Todo,Writing,S,MVP,Yes,TASK-M11-009,tasks/M13/TASK-M13-009.md
+TASK-M13-010,الإطلاق وفرز الأعطال بعده,M13,EP-24,High,Todo,DevOps,S,MVP,No,TASK-M13-008;TASK-M13-009,tasks/M13/TASK-M13-010.md
+TASK-M14-001,قرار المنصة التالية (الويب أو الجوال) من تقارير P0 وP2,M14,EP-23,Medium,Todo,Design,S,PostMVP,No,TASK-M13-008;TASK-M11-004,tasks/M14/TASK-M14-001.md
+TASK-M14-002,تصميم مخطط التحكم باللمس,M14,EP-07,Low,Todo,Design,M,PostMVP,No,TASK-M14-001,tasks/M14/TASK-M14-002.md
+TASK-M14-003,التحقق من عرض العربية وحجم ICU على المنصة المختارة,M14,EP-05,Low,Todo,Programming,M,PostMVP,No,TASK-M14-001,tasks/M14/TASK-M14-003.md
+TASK-M14-004,مذكرة تصميم الحفظ السحابي Convex بموافقة ولي الأمر,M14,EP-04,Low,Todo,Design,S,PostMVP,No,TASK-M13-008,tasks/M14/TASK-M14-004.md
+TASK-M14-005,تدقيق جاهزية الترجمة الإنجليزية (لا نصوص ثابتة في الكود),M14,EP-05,Low,Todo,QA,S,PostMVP,No,TASK-M13-008,tasks/M14/TASK-M14-005.md
