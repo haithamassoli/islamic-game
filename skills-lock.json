@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "skills": {
+    "audio-setup-mixers": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/audio-setup-mixers/SKILL.md",
+      "computedHash": "fa8b2cf6e17c47534b055b44c62bb68555ea1ec784939d3fad687f754ab1c4f0"
+    },
+    "csharp-nunit": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/csharp-nunit/SKILL.md",
+      "computedHash": "2026047ba0a3b1f3b7d68fd87d35a55ed8592c075979c14a3fcf2fa8c8b9fc3a"
+    },
+    "initialize-ai-navigation": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/initialize-ai-navigation/SKILL.md",
+      "computedHash": "45122d6636f0586523d3c68b2396f4f9a48ff7825ea250afc1f1af6d2b0b95bd"
+    },
+    "localization": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/localization/SKILL.md",
+      "computedHash": "ca07f23bff48b42aea4ef84f177bb54cc56791c86a2708011922bfb57ac99b8a"
+    },
+    "new-unity-project": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/new-unity-project/SKILL.md",
+      "computedHash": "ffcb3e579dc16610a528385bb2bec61610f2df49ac993d588262997e3c13dab5"
+    },
+    "optimize-web": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/optimize-web/SKILL.md",
+      "computedHash": "62beee5552a1e97d43e0bb6537035caf8899c507d5f81836e7cf8ade2d7f74ab"
+    },
+    "physics-3d-collision": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/physics-3d-collision/SKILL.md",
+      "computedHash": "c8a799bca0f54d6c7293d8316fea2efc69b5dd0e2aae30a9b09bb4fa98617bd3"
+    },
+    "project-auditor-fixes": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/project-auditor-fixes/SKILL.md",
+      "computedHash": "60ee9dac3c18e173eafb13bafd84735e14644b965a05f614da5ef8a149f3830f"
+    },
+    "ui": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/ui/SKILL.md",
+      "computedHash": "928988d966ce770b4bc497c142b6157bcea0a209af2afc99fdcbb2a2352e0d68"
+    },
+    "ui-ugui": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/ui-ugui/SKILL.md",
+      "computedHash": "f1f37ee90215335cf4211e54a68653ad366e911eddfc041758bcae3060e7dd0b"
+    },
+    "ui-uitk": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/ui-uitk/SKILL.md",
+      "computedHash": "24015badf3e7c0440d40cc1400592b63ee8bbcecd2af0dc956a86499028ff53d"
+    },
+    "unity-cli": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/unity-cli/SKILL.md",
+      "computedHash": "3dc226a7f8fdb938126606c6f7ed4c97a1eee541e9f0ae1a38e8d7918f37964e"
+    },
+    "unity-package-management": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/unity-package-management/SKILL.md",
+      "computedHash": "e3f2864bae52f446664469bba04484c04fc142d3b0e2290a4d360f46db808fcb"
+    },
+    "unity-pipeline": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/unity-pipeline/SKILL.md",
+      "computedHash": "8722ed6febdd686651c8d3bbf801e403eabc27c0b3abc574789085fefaff6e7e"
+    },
+    "urp-postprocessing": {
+      "source": "unity-technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/urp-postprocessing/SKILL.md",
+      "computedHash": "0dee1610b841f63ff8872c19c08ce74bd0a1fffa7322fb8d3fccb57106bae1ba"
+    }
+  }
+}
